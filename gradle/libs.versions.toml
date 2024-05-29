@@ -1,0 +1,39 @@
+[versions]
+version_ktx = "1.12.0"
+version_fragment = "1.6.2"
+version_agp = "8.3.0"
+version_kotlin = "1.9.23"
+version_kotlin_ksp = "1.9.23-1.0.19"
+version_dagger2 = "2.50"
+version_viewmodel = "2.7.0"
+version_livedata = "2.7.0"
+version_recyclerview = "1.3.2"
+version_kotlinfaker = "1.6.0"
+version_adapterdelegates = "4.3.2"
+version_room = "2.6.1"
+version_androidFramework = "4.1.1.4"
+version_coroutines = "1.8.0"
+
+[libraries]
+ktx = { group = "androidx.core", name = "core-ktx", version.ref = "version_ktx" }
+fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "version_fragment" }
+dagger2 = { group = "com.google.dagger", name = "dagger", version.ref = "version_dagger2" }
+dagger2compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "version_dagger2" }
+viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "version_viewmodel" }
+livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "version_livedata" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "version_recyclerview" }
+kotlinfaker = { group = "io.github.serpro69", name = "kotlin-faker", version.ref = "version_kotlinfaker" }
+adapterdelegates = { group = "com.hannesdorfmann", name = "adapterdelegates4-kotlin-dsl-viewbinding", version.ref = "version_adapterdelegates" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "version_room" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "version_room" }
+roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "version_room" }
+androidFramework = { group = "com.google.android", name = "android", version.ref = "version_androidFramework" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "version_coroutines" }
+
+[plugins]
+application = { id = "com.android.application", version.ref = "version_agp" }
+library = { id = "com.android.library", version.ref = "version_agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "version_kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "version_kotlin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "version_kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "version_kotlin_ksp" }
